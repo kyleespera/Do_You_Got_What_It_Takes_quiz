@@ -24,3 +24,4 @@ WHEN the game is over
 THEN I can save my initials and score
 
 ## Deployments
+https://kyleespera.github.io/Do_You_Got_What_It_Takes_quiz/
