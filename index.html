@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic Coding and Web Design Quiz Challenge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main class="container">
+
+        <section id="startpage">
+            <h2>Assess Your Understanding</h2>
+            <h2>In Coding and Web Design Principles</h2>
+            <button id="startbtn" onclick=" startQuiz()">Start Code Quiz</button>
+            <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
+        </section>
+
+        <section id="quiz">
+            <div id="timer">Time left: </div>
+            <article id="questions"><p>Awaiting Questions</p></article>
+            <button id="a" onclick="checkAnswer('a')">A</button>
+            <button id="b" onclick="checkAnswer('b')">B</button>
+            <button id="c" onclick="checkAnswer('c')">C</button>
+            <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
+        </section>
+
+        <section id="gameover">
+            <div id="finalScore"></div>
+            <input type="text" size="55" placeholder="Please Enter your initials for the high score" name="initials" id="initials"/>
+            <button id="proposeScore">Propose Score</button>
+        </section>
+
+        <section id="highscoreContainer">
+            <header id="highscore-header">
+                <h3>Player Initials</h3>
+                <h3>Score</h3>
+            </header>
+            <article id="high-scorePage">
+                <div id="highscore-initials"></div>
+                <div id="highscore-score"></div>
+            </article>
+            <div id="endGameBtns">
+                <button id="tryAgain" onclick="replayQuiz()">Try Again</button>
+                <button id="eraseHighscore" onclick="clearScore()">Erase Highscores</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* Root styling and global properties */
+:root {
+    background-color: rgb(38, 67, 129);
+}
+
+/* Styling for the body, setting font family */
+body {
+    font-family: kanit;
+}
+
+/* Style list items with white color, no bullets, and text shadow */
+li {
+    padding-bottom: 3px;
+    color: white;
+    text-shadow: 1.5px 1px 3px black;
+    list-style-type: none;
+}
+
+/* Style for paragraph elements - center aligned and larger font size */
+p {
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* Adjust margin for h2 elements */
+h2 {
+    margin-top: -.5rem;
+}
+
+/* Center-align content within input fields */
+input {
+    text-align: center;
+}
+
+/* Set main container dimensions and alignment */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+/* Style buttons with border and color properties, and set hover effect */
+button {
+    display: inline-block;
+    background-color: #7b0202;
+    border-radius: 10px;
+    border: 3px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    margin-top: 3px;
+}
+
+button:hover {
+    box-shadow: 4px 3px 6px #4450bd;
+}
+
+/* Style the start page with column layout and center alignment */
+#startpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Timer styling with specific background color and text properties */
+#timer {
+    background-color: #7b0202;
+    color: #eeeeee;
+    font-size: x-large;
+    text-shadow: .5px .5px black;
+    text-align: center;
+}
+
+/* Initially hide the quiz section */
+#quiz {
+    display: none;
+}
+
+/* Initially hide the result section */
+#result {
+    display: none;
+}
+
+/* Style the game over section with center alignment and hide it initially */
+#gameover {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for high score input field */
+#highScore {
+    height: 1.5rem;
+    border: groove 2px;
+}
+
+/* Style the high-score page with border properties and background color */
+#high-scorePage {
+    display: none;
+    width: 50%;
+    border: solid;
+    border-color: silver;
+    border-bottom-style: groove;
+    padding-bottom: .3rem;
+    background: rgb(158, 178, 223);
+}
+
+/* Style for the high score header */
+#highscore-header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom-style: outset;
+    margin-bottom: .5rem;
+    background-color: #7b0202;
+    color: #eeeeee;
+}
+
+/* Style for high score container and set its display to none */
+#highscoreContainer {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling the initials input field */
+#initials {
+    margin: .5rem;
+    height: 1.75rem;
+}
+
+/* Style for displayed initials with padding and font-weight */
+#highscore-initials {
+    display: inline-block;
+    padding-left: 9.5rem;
+    font-weight: bold;
+}
+
+/* Style for displayed score */
+#highscore-score {
+    float: right;
+    padding-right: 8.75rem;
+    font-weight: bold;
+}
+
+/* Styling the final score display */
+#finalScore {
+    padding-bottom: 0.5rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Initially hide the end game buttons */
+#endGameBtns {
+    display: none;
+}
